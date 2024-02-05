@@ -1,0 +1,39 @@
+body {
+  margin: 20px;
+  padding: 0;
+}
+.card {
+  width: 300px;
+  border: 2px solid black;
+  box-shadow: 5px 2px 10px 5px rgb(87, 86, 86);
+}
+.cardHeader {
+  display: flex;
+}
+
+.cardHeaderInfo {
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cardBottom {
+  position: relative;
+}
+.cardBottomP {
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  margin: 10px;
+  font-weight: bold;
+}
+.margin0 {
+  margin: 10px;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+}

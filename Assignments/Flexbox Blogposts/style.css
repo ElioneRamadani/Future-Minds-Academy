@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.dflex {
+  display: flex;
+}
+.flexd {
+  flex-direction: column;
+}
+.AlignI {
+  align-items: end;
+}
+.container {
+  height: 100vh;
+}
+aside {
+  background-color: darkcyan;
+  color: white;
+  width: 15vw;
+  justify-content: center;
+  padding-right: 20px;
+  align-items: end;
+}
+aside h2 {
+  font-size: 3.5rem;
+}
+aside p {
+  font-size: 1.5rem;
+}
+
+.btn {
+  background-color: transparent;
+  color: white;
+  padding: 5px 15px;
+  border: 1px solid white;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+main {
+  width: 85vw;
+  margin: 20px;
+}
+.article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.nameS {
+  color: blue;
+}
+
+.btn1 {
+  background-color: rgb(17, 158, 17);
+  color: white;
+  border: none;
+}
+
+.btn2 {
+  background-color: rgb(95, 116, 157);
+  color: white;
+  border: none;
+}
+
+.btn3 {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.textcolor {
+  color: grey;
+}
+
+.post {
+  padding: 10px;
+}
