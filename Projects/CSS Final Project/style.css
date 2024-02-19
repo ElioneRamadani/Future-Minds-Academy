@@ -1,24 +1,95 @@
+/* GLOBAL CLASS */
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+.gap30 {
+  display: flex;
+  gap: 30px;
+  padding: 5px;
+}
+.margin20 {
+  margin: 20px;
+}
+.margintop {
+  margin-top: 35px;
+}
+
+.fontsize {
+  font-size: 1.2rem;
+}
+.textgrey {
+  color: grey;
+}
+.dFlex {
+  display: flex;
+}
+
+.borderbottom {
+  border-bottom: 2px solid gray;
+}
+.mainIcons {
+  padding: 15px;
+  margin-top: -80px;
+  border-radius: 2px;
+}
+.bg1 {
+  background-color: rgb(11, 176, 11);
+}
+.bg2 {
+  background-color: orange;
+}
+.bg3 {
+  background-color: darkred;
+}
+.bg4 {
+  background-color: rgb(20, 115, 188);
+}
+
+.dficon {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.infoicon {
+  display: flex;
+  gap: 10px;
+  margin-top: 7px;
+}
+.paddingbottom {
+  padding-bottom: 7px;
+}
+.padding {
+  padding: 7px 0px 45px 0px;
+}
+.alignitems {
+  display: flex;
+  justify-content: center;
+}
+.textalign {
+  text-align: center;
+}
+.margintop15 {
+  margin-top: 15px;
+}
+/* Body CSS*/
 body {
-  background-color: black;
-  color: white;
   display: grid;
   grid-template-columns: auto 1fr;
   height: 100vh;
+  background-color: lightgrey;
 }
-
-main {
-  background-color: lightgray;
-}
-
+/* Aside CSS */
 aside {
   background-image: url(Assets/images/sidebar-1.jpg);
   background-blend-mode: color;
   background-color: rgba(0, 0, 0, 0.697);
+  color: white;
 }
+
 .sidebar1 {
   margin: 20px;
 }
@@ -45,8 +116,152 @@ aside {
   background-color: red;
   border-radius: 5px;
 }
-
 .sidebar:hover:not(.dashbord) {
   background-color: rgba(211, 211, 211, 0.274);
   border-radius: 5px;
+}
+/* Header CSS*/
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.round {
+  border-radius: 50px;
+  background: white;
+  padding: 5px;
+}
+.round:hover {
+  box-shadow: rgb(120, 120, 120) -4px 0px 45px;
+  transition: 0.3s ease-in;
+}
+
+.search {
+  border: none;
+  border-bottom: 2px solid gray;
+  background: none;
+  outline: none;
+}
+
+.search:focus {
+  border-bottom-color: purple;
+  transition: 1s;
+}
+.notification {
+  position: relative;
+  cursor: pointer;
+}
+
+.redbtn {
+  background-color: red;
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 7px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5px;
+  height: 8px;
+}
+
+.notification .redbtn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+.notificationMsgn {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  width: 250px;
+  background-color: white;
+  padding: 5px;
+  display: none;
+}
+
+.notification:hover .notificationMsgn {
+  display: block;
+}
+
+.notificationMsgn p {
+  padding: 7px;
+}
+.notificationMsgn p:hover {
+  background-color: red;
+  padding: 7px;
+  color: white;
+}
+/* Main CSS */
+/* Section 1 CSS */
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.marginp {
+  margin-top: -10px;
+}
+.statlist {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+/* Section 2 CSS */
+.divcards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.card1 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+/* Section 3 CSS */
+.listingscard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  position: relative;
+}
+.listings {
+  position: relative;
+}
+.card2 {
+  background-color: white;
+  padding: 0px 15px;
+  border-radius: 5px;
+}
+
+.images img {
+  border-radius: 5px;
+  margin-top: -20px;
+}
+
+.icons {
+  position: absolute;
+  bottom: 0;
+
+  right: 50px;
+  left: 50px;
+}
+.images img:hover {
+  transform: translateY(-30px);
+}
+.icons {
+  visibility: hidden;
+}
+.images:hover + .icons {
+  visibility: visible;
+}
+.navlist ul {
+  list-style-type: none;
+}
+.copyright {
+  display: flex;
+  align-items: center;
 }

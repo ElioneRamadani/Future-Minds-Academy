@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
+    <!--ASIDE-->
     <aside>
       <div class="sidebar1">
         <div class="cp1">
@@ -201,7 +208,497 @@
         </div>
       </div>
     </aside>
-    <header></header>
-    <main></main>
+    <!--header-->
+    <div class="container margin20">
+      <header>
+        <div class="header1">
+          <div class="header1 gap30">
+            <figure>
+              <img
+                class="round"
+                title="See More"
+                src="Assets/icons/header/more.svg"
+                alt="moreicon"
+              />
+            </figure>
+            <p>Dashboard</p>
+          </div>
+
+          <div class="header1">
+            <form class="header1">
+              <input
+                class="search"
+                type="search"
+                id="search"
+                placeholder="Search"
+              />
+              <label for="search">
+                <figure>
+                  <img
+                    class="round"
+                    src="Assets/icons/header/search.svg"
+                    alt="searchicon"
+                  />
+                </figure>
+              </label>
+            </form>
+            <div class="header1 gap30">
+              <figure>
+                <img
+                  src="Assets/icons/header/headerDashboard.svg"
+                  alt="dashbordicon"
+                />
+              </figure>
+              <div class="notification">
+                <figure class="notification">
+                  <img
+                    src="Assets/icons/header/notifications.svg"
+                    alt="notificationsicon"
+                  />
+                </figure>
+                <p class="redbtn">5</p>
+                <div class="notificationMsgn">
+                  <p>John Doe sent a message</p>
+                  <p>Someone viewed your profile</p>
+                  <p>John Doe sent a message</p>
+                  <p>Someone viewed your profile</p>
+                  <p>Another notification</p>
+                </div>
+              </div>
+
+              <figure>
+                <img
+                  src="Assets/icons/header/headerAvatar.svg"
+                  alt="headericon"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!--SECTION 1-->
+        <section>
+          <div class="card">
+            <div class="dFlex gap30">
+              <div>
+                <figure>
+                  <img
+                    class="mainIcons bg1"
+                    src="Assets/icons/cards/language.svg"
+                    alt="language"
+                  />
+                </figure>
+              </div>
+              <div class="marginp">
+                <p>Global Sales by Top Lacations</p>
+              </div>
+            </div>
+
+            <div class="statlist gap30">
+              <div>
+                <div class="dFlex gap30 borderbottom dficon">
+                  <div class="dFlex gap30">
+                    <figure>
+                      <img
+                        width="15px"
+                        src="Assets/flags/albania.svg"
+                        alt="Albaniaflag"
+                      />
+                    </figure>
+                    <p>Albania</p>
+                  </div>
+                  <div class="dFlex gap30">
+                    <p>2920</p>
+                    <p>53.23%</p>
+                  </div>
+                </div>
+
+                <div class="dFlex gap30 borderbottom dficon">
+                  <div class="dFlex gap30">
+                    <figure>
+                      <img
+                        width="15px"
+                        src="Assets/flags/germany.svg"
+                        alt="Germanyflag"
+                      />
+                    </figure>
+                    <p>Germany</p>
+                  </div>
+                  <div class="dFlex gap30">
+                    <p>1.300</p>
+                    <p>4.34%</p>
+                  </div>
+                </div>
+
+                <div class="dFlex gap30 borderbottom dficon">
+                  <div class="dFlex gap30">
+                    <figure>
+                      <img
+                        width="15px"
+                        src="Assets/flags/italy.svg"
+                        alt="Italyflag"
+                      />
+                    </figure>
+                    <p>Italy</p>
+                  </div>
+                  <div class="dFlex gap30">
+                    <p>760</p>
+                    <p>20.23%</p>
+                  </div>
+                </div>
+
+                <div class="dFlex gap30 borderbottom dficon">
+                  <div class="dFlex gap30">
+                    <figure>
+                      <img
+                        width="15px"
+                        src="Assets/flags/kosovo.svg"
+                        alt="Kosovoflag"
+                      />
+                    </figure>
+                    <p>Kosovo</p>
+                  </div>
+                  <div class="dFlex gap30">
+                    <p>600</p>
+                    <p>21.2%</p>
+                  </div>
+                </div>
+
+                <div class="dFlex gap30 dficon">
+                  <div class="dFlex gap30">
+                    <figure>
+                      <img
+                        width="15px"
+                        src="Assets/flags/us.svg"
+                        alt="USAflag"
+                      />
+                    </figure>
+                    <p>USA</p>
+                  </div>
+                  <div class="dFlex gap30">
+                    <p>560</p>
+                    <p>53.2%</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47094.38487883534!2d21.42092465405739!3d42.4618007918672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13548d28fe87b91d%3A0xab45b8a9d06a705!2sGjilan!5e0!3m2!1sen!2s!4v1707758657180!5m2!1sen!2s"
+                  width="100%"
+                  height="250px"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Section2-->
+
+        <div class="divcards margintop">
+          <!--Bookings-->
+          <div class="card1">
+            <div class="dficon dFlex">
+              <div>
+                <figure>
+                  <img
+                    class="mainIcons bg2"
+                    src="Assets/icons/cards/couch.svg"
+                    alt="couchicon"
+                  />
+                </figure>
+              </div>
+              <div>
+                <p class="textgrey">Bookings</p>
+                <p class="fontsize">184</p>
+              </div>
+            </div>
+            <hr class="textgrey" />
+            <div class="infoicon">
+              <figure>
+                <img
+                  width="20px"
+                  src="Assets/icons/cards/warning.svg"
+                  alt="warningicon"
+                />
+              </figure>
+              <p class="textgrey">Get more space</p>
+            </div>
+          </div>
+          <!--Website visits-->
+          <div class="card1">
+            <div class="dficon dFlex">
+              <div>
+                <figure>
+                  <img
+                    class="mainIcons bg3"
+                    src="Assets/icons/cards/equalizer.svg"
+                    alt="equalizericon"
+                  />
+                </figure>
+              </div>
+              <div>
+                <p class="textgrey">Website visits</p>
+                <p class="fontsize">75.521</p>
+              </div>
+            </div>
+            <hr class="textgrey" />
+            <div class="infoicon">
+              <figure>
+                <img
+                  width="20px"
+                  src="Assets/icons/cards/tracked.svg"
+                  alt="warningicon"
+                />
+              </figure>
+              <p class="textgrey">Tracked from Google Analytics</p>
+            </div>
+          </div>
+          <!--Revenue
+   -->
+          <div class="card1">
+            <div class="dficon dFlex">
+              <div>
+                <figure>
+                  <img
+                    class="mainIcons bg1"
+                    src="Assets/icons/cards/storefront.svg"
+                    alt="storefronticon"
+                  />
+                </figure>
+              </div>
+              <div>
+                <p class="textgrey">Revenue</p>
+                <p class="fontsize">$34.116</p>
+              </div>
+            </div>
+            <hr class="textgrey" />
+            <div class="infoicon">
+              <figure>
+                <img
+                  width="20px"
+                  src="Assets/icons/cards/calendar.svg"
+                  alt="warningicon"
+                />
+              </figure>
+              <p class="textgrey">Last 24 hours</p>
+            </div>
+          </div>
+          <!--Followers-->
+          <div class="card1">
+            <div class="dficon dFlex">
+              <div>
+                <figure>
+                  <img
+                    class="mainIcons bg4"
+                    src="Assets/icons/cards/public.svg"
+                    alt="publicicon"
+                  />
+                </figure>
+              </div>
+              <div>
+                <p class="textgrey">Followers</p>
+                <p class="fontsize">+245</p>
+              </div>
+            </div>
+            <hr class="textgrey" />
+            <div class="infoicon">
+              <figure>
+                <img
+                  width="20px"
+                  src="Assets/icons/cards/update.svg"
+                  alt="warningicon"
+                />
+              </figure>
+              <p class="textgrey">Just Updated</p>
+            </div>
+          </div>
+        </div>
+
+        <!--TITLE-->
+
+        <div class="margintop">
+          <p class="fontsize">Manage Listings</p>
+        </div>
+        <!-- Section 3-->
+        <div class="listingscard margintop">
+          <!--Card1-->
+          <div class="card2">
+            <div class="listings">
+              <div class="images alignitems paddingbottom">
+                <figure>
+                  <img
+                    width="350px"
+                    src="Assets/images/card-1.jpeg"
+                    alt="card1"
+                  />
+                </figure>
+              </div>
+              <div class="icons dFlex alignitems">
+                <figure>
+                  <img src="Assets/icons/cards/view.svg" alt="" />
+                </figure>
+                <figure>
+                  <img src="Assets/icons/cards/edit.svg" alt="" />
+                </figure>
+                <figure>
+                  <img src="Assets/icons/cards/delete.svg" alt="" />
+                </figure>
+              </div>
+            </div>
+            <div class="discription textalign">
+              <p class="fontsize paddingbottom">Cozy 5 Stars Apartment</p>
+              <p class="textgrey padding">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                deleniti dignissimos accusantium minima nemo asperiores illum
+                quas alias, fugit id, recusandae illo harum aspernatur, enim
+                architecto commodi eaque error similique.
+              </p>
+            </div>
+            <hr />
+
+            <div class="dficon dFlex margintop15">
+              <div>
+                <p class="fontsize">$899/night</p>
+              </div>
+              <div class="dFlex">
+                <figure>
+                  <img
+                    src="Assets/icons/cards/location.svg"
+                    alt="locationicon"
+                  />
+                </figure>
+                <p class="textgrey">Barcelona, Spain</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2-->
+          <div class="card2">
+            <div class="listings">
+              <div class="images alignitems paddingbottom">
+                <figure>
+                  <img
+                    width="350px"
+                    src="Assets/images/card-2.jpeg"
+                    alt="card1"
+                  />
+                </figure>
+              </div>
+              <div class="icons dFlex alignitems">
+                <figure>
+                  <img src="Assets/icons/cards/view.svg" alt="" />
+                </figure>
+                <figure>
+                  <img src="Assets/icons/cards/edit.svg" alt="" />
+                </figure>
+                <figure>
+                  <img src="Assets/icons/cards/delete.svg" alt="" />
+                </figure>
+              </div>
+            </div>
+            <div class="discription textalign">
+              <p class="fontsize paddingbottom">Office Studio</p>
+              <p class="textgrey padding">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                deleniti dignissimos accusantium minima nemo asperiores illum
+                quas alias, fugit id, recusandae illo harum aspernatur, enim
+                architecto commodi eaque error similique.
+              </p>
+            </div>
+            <hr />
+
+            <div class="dficon dFlex margintop15">
+              <div>
+                <p class="fontsize">$1.119/night</p>
+              </div>
+              <div class="dFlex">
+                <figure>
+                  <img
+                    src="Assets/icons/cards/location.svg"
+                    alt="locationicon"
+                  />
+                </figure>
+                <p class="textgrey">London, UK</p>
+              </div>
+            </div>
+          </div>
+          <!--Card 3-->
+          <div class="card2">
+            <div class="listings">
+              <div class="images alignitems paddingbottom">
+                <figure>
+                  <img
+                    width="350px"
+                    src="Assets/images/card-3.jpeg"
+                    alt="card1"
+                  />
+                </figure>
+              </div>
+              <div class="icons dFlex alignitems">
+                <figure>
+                  <img src="Assets/icons/cards/view.svg" alt="" />
+                </figure>
+                <figure>
+                  <img src="Assets/icons/cards/edit.svg" alt="" />
+                </figure>
+                <figure>
+                  <img src="Assets/icons/cards/delete.svg" alt="" />
+                </figure>
+              </div>
+            </div>
+            <div class="discription textalign">
+              <p class="fontsize paddingbottom">Beautiful Castle</p>
+              <p class="textgrey padding">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                deleniti dignissimos accusantium minima nemo asperiores illum
+                quas alias, fugit id, recusandae illo harum aspernatur, enim
+                architecto commodi eaque error similique.
+              </p>
+            </div>
+            <hr />
+
+            <div class="dficon dFlex margintop15">
+              <div>
+                <p class="fontsize">$459/night</p>
+              </div>
+              <div class="dFlex">
+                <figure>
+                  <img
+                    src="Assets/icons/cards/location.svg"
+                    alt="locationicon"
+                  />
+                </figure>
+                <p class="textgrey">Milan, Italy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <hr class="margintop" />
+        <div class="footer dficon margintop15">
+          <div class="navlist">
+            <nav>
+              <ul class="dFlex gap30">
+                <li>HOME</li>
+                <li>COMPANY</li>
+                <li>PORTOFOLIO</li>
+                <li>BLOG</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="copyright">
+            <figure>
+              <img width="15px" src="Assets/icons/cards/copyright.png" alt="" />
+            </figure>
+            <p>John Doe, 2024</p>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
