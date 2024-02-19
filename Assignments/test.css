@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: red;
+    
+
+}
+div{
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+}
+
+.Laside{
+    background-color: yellow;
+}
+
+.Raside{
+    background-color: blueviolet;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    height: 200vh;
+    padding: 50px;
+    gap: 1rem;
+}
+
+section{
+    background-color: gray;
+    display: grid;
+
+}
+
+footer{
+    background-color: violet;
+}
+
+
+
+
+
+
+
+
+

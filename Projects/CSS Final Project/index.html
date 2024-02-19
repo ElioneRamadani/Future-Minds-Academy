@@ -16,7 +16,7 @@
   <body>
     <!--ASIDE-->
     <aside>
-      <div class="sidebar1">
+      <div class="sidebar1 cursor">
         <div class="cp1">
           <div>
             <p>CP</p>
@@ -209,72 +209,92 @@
       </div>
     </aside>
     <!--header-->
-    <div class="container margin20">
+    <div class="container">
       <header>
-        <div class="header1">
-          <div class="header1 gap30">
-            <figure>
-              <img
-                class="round"
-                title="See More"
-                src="Assets/icons/header/more.svg"
-                alt="moreicon"
-              />
-            </figure>
-            <p>Dashboard</p>
-          </div>
-
-          <div class="header1">
-            <form class="header1">
-              <input
-                class="search"
-                type="search"
-                id="search"
-                placeholder="Search"
-              />
-              <label for="search">
-                <figure>
-                  <img
-                    class="round"
-                    src="Assets/icons/header/search.svg"
-                    alt="searchicon"
-                  />
-                </figure>
-              </label>
-            </form>
+        <section>
+          <div class="header1 marginbottom">
             <div class="header1 gap30">
               <figure>
                 <img
-                  src="Assets/icons/header/headerDashboard.svg"
-                  alt="dashbordicon"
+                  class="round cursor"
+                  title="See More"
+                  src="Assets/icons/header/more.svg"
+                  alt="moreicon"
                 />
               </figure>
-              <div class="notification">
-                <figure class="notification">
+              <p class="fontweight">Dashboard</p>
+            </div>
+
+            <div class="header1 gap30">
+              <form class="header1">
+                <input
+                  class="search"
+                  type="search"
+                  id="search"
+                  placeholder="Search"
+                />
+                <label for="search">
+                  <figure>
+                    <img
+                      class="round cursor"
+                      title="Search"
+                      src="Assets/icons/header/search.svg"
+                      alt="searchicon"
+                    />
+                  </figure>
+                </label>
+              </form>
+              <div class="header1 gap30">
+                <figure>
                   <img
-                    src="Assets/icons/header/notifications.svg"
-                    alt="notificationsicon"
+                    class="cursor"
+                    src="Assets/icons/header/headerDashboard.svg"
+                    title="Dashboard"
+                    alt="dashboardicon"
                   />
                 </figure>
-                <p class="redbtn">5</p>
-                <div class="notificationMsgn">
-                  <p>John Doe sent a message</p>
-                  <p>Someone viewed your profile</p>
-                  <p>John Doe sent a message</p>
-                  <p>Someone viewed your profile</p>
-                  <p>Another notification</p>
+                <div class="notification cursor">
+                  <figure class="notification">
+                    <img
+                      src="Assets/icons/header/notifications.svg"
+                      title="Notifications"
+                      alt="notificationsicon"
+                    />
+                  </figure>
+                  <p class="redbtn">5</p>
+                  <div class="notificationMsgn">
+                    <p>John Doe sent a message</p>
+                    <p>Someone viewed your profile</p>
+                    <p>John Doe sent a message</p>
+                    <p>Someone viewed your profile</p>
+                    <p>Another notification</p>
+                  </div>
                 </div>
-              </div>
 
-              <figure>
-                <img
-                  src="Assets/icons/header/headerAvatar.svg"
-                  alt="headericon"
-                />
-              </figure>
+                <figure>
+                  <img
+                    class="cursor"
+                    src="Assets/icons/header/headerAvatar.svg"
+                    title="Profile"
+                    alt="headericon"
+                  />
+                </figure>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+        <section>
+          <div class="header2">
+            <p>DASHBOARD</p>
+            <figure>
+              <img
+                src="Assets/icons/header/menu.svg"
+                alt="menuicon"
+                title="Menu"
+              />
+            </figure>
+          </div>
+        </section>
       </header>
       <main>
         <!--SECTION 1-->
@@ -291,7 +311,7 @@
                 </figure>
               </div>
               <div class="marginp">
-                <p>Global Sales by Top Lacations</p>
+                <p class="fontsize fontweight">Global Sales by Top Lacations</p>
               </div>
             </div>
 
@@ -414,7 +434,7 @@
               </div>
               <div>
                 <p class="textgrey">Bookings</p>
-                <p class="fontsize">184</p>
+                <p class="fontsize fontweight margintop15">184</p>
               </div>
             </div>
             <hr class="textgrey" />
@@ -443,7 +463,7 @@
               </div>
               <div>
                 <p class="textgrey">Website visits</p>
-                <p class="fontsize">75.521</p>
+                <p class="fontsize fontweight margintop15">75.521</p>
               </div>
             </div>
             <hr class="textgrey" />
@@ -473,7 +493,7 @@
               </div>
               <div>
                 <p class="textgrey">Revenue</p>
-                <p class="fontsize">$34.116</p>
+                <p class="fontsize fontweight margintop15">$34.116</p>
               </div>
             </div>
             <hr class="textgrey" />
@@ -502,7 +522,7 @@
               </div>
               <div>
                 <p class="textgrey">Followers</p>
-                <p class="fontsize">+245</p>
+                <p class="fontsize fontweight margintop15">+245</p>
               </div>
             </div>
             <hr class="textgrey" />
@@ -522,14 +542,15 @@
         <!--TITLE-->
 
         <div class="margintop">
-          <p class="fontsize">Manage Listings</p>
+          <p class="fontsize fontweight">Manage Listings</p>
         </div>
+
         <!-- Section 3-->
         <div class="listingscard margintop">
           <!--Card1-->
           <div class="card2">
             <div class="listings">
-              <div class="images alignitems paddingbottom">
+              <div class="images justifyC paddingbottom cursor">
                 <figure>
                   <img
                     width="350px"
@@ -538,20 +559,34 @@
                   />
                 </figure>
               </div>
-              <div class="icons dFlex alignitems">
+              <div class="icons dFlex justifyC gap10 cursor">
                 <figure>
-                  <img src="Assets/icons/cards/view.svg" alt="" />
+                  <img
+                    src="Assets/icons/cards/view.svg"
+                    alt="Viewicon"
+                    title="View"
+                  />
                 </figure>
                 <figure>
-                  <img src="Assets/icons/cards/edit.svg" alt="" />
+                  <img
+                    src="Assets/icons/cards/edit.svg"
+                    alt="Editicon"
+                    title="Edit"
+                  />
                 </figure>
                 <figure>
-                  <img src="Assets/icons/cards/delete.svg" alt="" />
+                  <img
+                    src="Assets/icons/cards/delete.svg"
+                    alt="Deleteicon"
+                    title="Delete"
+                  />
                 </figure>
               </div>
             </div>
             <div class="discription textalign">
-              <p class="fontsize paddingbottom">Cozy 5 Stars Apartment</p>
+              <p class="fontsize paddingbottom fontweight">
+                Cozy 5 Stars Apartment
+              </p>
               <p class="textgrey padding">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
                 deleniti dignissimos accusantium minima nemo asperiores illum
@@ -563,7 +598,7 @@
 
             <div class="dficon dFlex margintop15">
               <div>
-                <p class="fontsize">$899/night</p>
+                <p class="fontsize fontweight">$899/night</p>
               </div>
               <div class="dFlex">
                 <figure>
@@ -579,7 +614,7 @@
           <!-- Card 2-->
           <div class="card2">
             <div class="listings">
-              <div class="images alignitems paddingbottom">
+              <div class="images justifyC paddingbottom cursor">
                 <figure>
                   <img
                     width="350px"
@@ -588,20 +623,32 @@
                   />
                 </figure>
               </div>
-              <div class="icons dFlex alignitems">
+              <div class="icons dFlex justifyC gap10 cursor">
                 <figure>
-                  <img src="Assets/icons/cards/view.svg" alt="" />
+                  <img
+                    src="Assets/icons/cards/view.svg"
+                    alt="viewicon"
+                    title="View"
+                  />
                 </figure>
                 <figure>
-                  <img src="Assets/icons/cards/edit.svg" alt="" />
+                  <img
+                    src="Assets/icons/cards/edit.svg"
+                    alt="editicon"
+                    title="Edit"
+                  />
                 </figure>
                 <figure>
-                  <img src="Assets/icons/cards/delete.svg" alt="" />
+                  <img
+                    src="Assets/icons/cards/delete.svg"
+                    alt="deleteicon"
+                    title="Delete"
+                  />
                 </figure>
               </div>
             </div>
             <div class="discription textalign">
-              <p class="fontsize paddingbottom">Office Studio</p>
+              <p class="fontsize paddingbottom fontweight">Office Studio</p>
               <p class="textgrey padding">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
                 deleniti dignissimos accusantium minima nemo asperiores illum
@@ -613,7 +660,7 @@
 
             <div class="dficon dFlex margintop15">
               <div>
-                <p class="fontsize">$1.119/night</p>
+                <p class="fontsize fontweight">$1.119/night</p>
               </div>
               <div class="dFlex">
                 <figure>
@@ -629,7 +676,7 @@
           <!--Card 3-->
           <div class="card2">
             <div class="listings">
-              <div class="images alignitems paddingbottom">
+              <div class="images justifyC paddingbottom cursor">
                 <figure>
                   <img
                     width="350px"
@@ -638,20 +685,32 @@
                   />
                 </figure>
               </div>
-              <div class="icons dFlex alignitems">
+              <div class="icons dFlex justifyC gap10 cursor">
                 <figure>
-                  <img src="Assets/icons/cards/view.svg" alt="" />
+                  <img
+                    src="Assets/icons/cards/view.svg"
+                    alt="Viewicon"
+                    title="View"
+                  />
                 </figure>
                 <figure>
-                  <img src="Assets/icons/cards/edit.svg" alt="" />
+                  <img
+                    src="Assets/icons/cards/edit.svg"
+                    alt="Editicon"
+                    title="Edit"
+                  />
                 </figure>
                 <figure>
-                  <img src="Assets/icons/cards/delete.svg" alt="" />
+                  <img
+                    src="Assets/icons/cards/delete.svg"
+                    alt="Deleteicon"
+                    title="Delete"
+                  />
                 </figure>
               </div>
             </div>
             <div class="discription textalign">
-              <p class="fontsize paddingbottom">Beautiful Castle</p>
+              <p class="fontsize paddingbottom fontweight">Beautiful Castle</p>
               <p class="textgrey padding">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
                 deleniti dignissimos accusantium minima nemo asperiores illum
@@ -663,7 +722,7 @@
 
             <div class="dficon dFlex margintop15">
               <div>
-                <p class="fontsize">$459/night</p>
+                <p class="fontsize fontweight">$459/night</p>
               </div>
               <div class="dFlex">
                 <figure>
@@ -691,11 +750,8 @@
               </ul>
             </nav>
           </div>
-          <div class="copyright">
-            <figure>
-              <img width="15px" src="Assets/icons/cards/copyright.png" alt="" />
-            </figure>
-            <p>John Doe, 2024</p>
+          <div class="dFlex">
+            <p>&copy; John Doe, 2024</p>
           </div>
         </div>
       </footer>
